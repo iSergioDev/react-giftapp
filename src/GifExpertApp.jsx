@@ -3,9 +3,8 @@ import React, { useState } from 'react'
 import AddCategory from './components/AddCategory'
 import GifGrid from './components/GifGrid'
 
-function GifExpertApp() {
-  const init = ["One Punch"]
-  const [categories, setCategories] = useState(init)
+function GifExpertApp( {defaultCategories = []}) {
+  const [categories, setCategories] = useState(defaultCategories)
 
   return (
     <>
